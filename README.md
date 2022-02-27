@@ -2,6 +2,10 @@
 
 
 
+This project was assigned for the Digital System Design (EE 240) course on Spring 2021 semester.
+
+
+
 ## Authors
 
 👤 **Aras Güngöre**
