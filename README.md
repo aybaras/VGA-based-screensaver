@@ -53,9 +53,13 @@ of the total pixels are invisible to the viewer, so we have to keep a separate c
 In an indexing scale where the pixels are enumerated from 1 to 480x640, the index of the
 position of the left corner of the square can be expressed as “x + y * 640”. We can determine
 whether the incoming pixel is in the square range or not by checking if the current pixel index
-is in the range “square_pos + i * screen_width < curr_pixel_index < square_pos + square_width + i * screen_width”
-for any i = {0, 1, 2, ..., square_height}. If the current pixel index is not in any of these ranges,
-we can determine that the pixel doesn’t belong to the icon so it must be black.
+is in the following range:
+```
+𝑠𝑞𝑢𝑎𝑟𝑒_𝑝𝑜𝑠 + 𝑖 * 𝑠𝑐𝑟𝑒𝑒𝑛_𝑤𝑖𝑑𝑡ℎ < 𝑐𝑢𝑟𝑟_𝑝𝑖𝑥𝑒𝑙_𝑖𝑛𝑑𝑒𝑥 < 𝑠𝑞𝑢𝑎𝑟𝑒_𝑝𝑜𝑠 + 𝑠𝑞𝑢𝑎𝑟𝑒_𝑤𝑖𝑑𝑡ℎ + 𝑖 * 𝑠𝑐𝑟𝑒𝑒𝑛_𝑤𝑖𝑑𝑡ℎ
+for any 𝑖 = {0, 1, 2, ..., 𝑠𝑞𝑢𝑎𝑟𝑒_ℎ𝑒𝑖𝑔ℎ𝑡}
+```
+If the current pixel index is not in any of these ranges, we can determine that the pixel
+doesn’t belong to the icon so it must be black.
 
 
 
