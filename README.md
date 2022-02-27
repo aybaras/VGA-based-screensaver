@@ -49,7 +49,6 @@ pixel which is displayed on the video. The second counter tracks the index of th
 it is displayed on the video or not. When the second counter hits the max limit, both counters reset
 to 0. There are 480x640 displayed pixels and 721x800 total pixels in one frame. About a quarter
 of the total pixels are invisible to the viewer, so we have to keep a separate counter for the latter.
-
 In an indexing scale where the pixels are enumerated from 1 to 480x640, the index of the
 position of the left corner of the square can be expressed as “x + y * 640”. We can determine
 whether the incoming pixel is in the square range or not by checking if the current pixel index
