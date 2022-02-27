@@ -1,6 +1,6 @@
 # screensaver-with-vga
 
-A VHDL-based VGA driver to implement a square 41x41 screensaver that sequentially cycles through all RGB colors as it moves.
+A VHDL-based VGA driver to implement a square 41x41 screensaver that sequentially cycles through 256 different colors as it moves.
 
 This project was assigned for the Digital System Design (EE 240) course on Spring 2021 semester.
 
