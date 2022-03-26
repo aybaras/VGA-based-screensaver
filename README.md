@@ -2,7 +2,7 @@
 
 A VHDL-based VGA driver to implement a square 41x41 screensaver that cycles through 256 different colors as it moves.
 
-This project was assigned for the Digital System Design (EE 240) course on Spring 2021 semester.
+This project was assigned for the Digital System Design (EE 240) course in the Spring 2021 semester.
 
 
 
