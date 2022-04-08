@@ -1,4 +1,4 @@
-# screensaver-with-vga
+# VGA-based-screensaver
 
 A VHDL-based VGA driver to implement a square 41x41 screensaver that cycles through 256 different colors as it moves.
 
